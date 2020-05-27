@@ -1,4 +1,4 @@
-api_key = "AIzaSyBb8OGJMpiTG74IcmuLaPJdCSMONBgEpg0"
+api_key = input("Enter your youtube API key: ")
 from googleapiclient.discovery import build
 import json
 import pprint
@@ -16,7 +16,7 @@ req = youtube.playlistItems().list( # pylint: disable=no-member
 
 res = req.execute()
 scope = 'playlist-modify-public'
-username = 'junketsu98'
+username = input("Enter your Spotify Username: ")
 
 token = util.prompt_for_user_token(username, scope)
 
@@ -24,7 +24,7 @@ sp = spotipy.Spotify(client_credentials_manager=SpotifyClientCredentials())
 
 if token:
     sp = spotipy.Spotify(auth = token)
-    playlist = sp.user_playlist_create(username, "TEST HOE!")
+    playlist = sp.user_playlist_create(username, "Generated Playlist")
     playlist__ID = playlist['id']
     print(playlist__ID)
 
@@ -50,10 +50,8 @@ def getArtist_Song(x):
         if(video is None):
          print("The YouTube database does not have an official Video name!")
          continue
-  
-        #print(artiste, song_name)
     
-        #search the girls
+        #Search Spotify for the songs
         results = sp.search(q = (artiste+ " " +song_name), limit =1 )
 
         try:

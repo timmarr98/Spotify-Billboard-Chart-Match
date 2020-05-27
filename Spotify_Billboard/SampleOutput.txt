@@ -1,0 +1,19 @@
+Sample Output for Spotify:
+
+These are artist Ariana Grande's current top 100 entries
+# 13 Stuck With U at 2 weeks on the charts
+------ 1 entries as of today ------- 
+
+These are artist Harry Styles's current top 100 entries
+# 12 Adore You at 24 weeks on the charts
+# 64 Watermelon Sugar at 9 weeks on the charts
+------ 2 entries as of today -------
+
+These are artist Roddy Ricch's current top 100 entries
+# 4 Rockstar at 5 weeks on the charts
+# 7 The Box at 24 weeks on the charts
+# 24 High Fashion at 21 weeks on the charts
+# 49 Ballin' at 44 weeks on the charts
+# 52 Walk Em Down at 9 weeks on the charts
+------ 5 entries as of today -------
+
